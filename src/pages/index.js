@@ -2,7 +2,7 @@ import React, { useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import RegistrationForm from '@/components/RegistrationForm'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,11 +16,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
+   {/*    <main className={styles.main}> */}  
+   <main>
+   {/*      <div className={styles.description}> */}
+   <div>
           <p>
             build in public with us
-            <code className={styles.code}>@<a href="https://github.com/asiakay/ant-ai">
+          {/*   <code className={styles.code}> */}
+          <code>@<a href="https://github.com/asiakay/ant-ai">
               github.com/asiakay/ant.ai</a></code>
           </p>
           <div>
@@ -33,7 +36,7 @@ export default function Home() {
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className={styles.vercelLogo}
+               /*  className={styles.vercelLogo} */
                 width={100}
                 height={24}
                 priority
@@ -42,7 +45,8 @@ export default function Home() {
           </div>
         </div>
 
-       <div className={styles.center}>
+     {/*   <div className={styles.center}> */}
+     <div>
         <RegistrationForm />
            {/*        <Image
             className={styles.logo}
@@ -63,10 +67,11 @@ export default function Home() {
           </div>  */}
         </div> 
 
-        <div className={styles.grid}>
+      {/*   <div className={styles.grid}> */}
+      <div>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+          /*   className={styles.card} */
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,8 +84,8 @@ export default function Home() {
           </a>
 
           <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+           /*  href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className={styles.card} */
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,7 +99,7 @@ export default function Home() {
 
           <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+          /*   className={styles.card} */
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -108,7 +113,7 @@ export default function Home() {
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+       /*      className={styles.card} */
             target="_blank"
             rel="noopener noreferrer"
           >
