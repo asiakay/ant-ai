@@ -1,3 +1,4 @@
+import React, { useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -39,7 +40,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
+       {/*  <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -57,7 +58,7 @@ export default function Home() {
               priority
             />
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.grid}>
           <a
