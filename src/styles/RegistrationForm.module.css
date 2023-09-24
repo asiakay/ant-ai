@@ -1,0 +1,56 @@
+/* RegistrationForm.css */
+
+/* Container for the entire form */
+.registration-form-container {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Form element grouping */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input styles */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Checkbox group styles */
+.checkbox-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+/* Submit button styles */
+.registration-form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registration-form-button:hover {
+  background-color: #0056b3;
+}
