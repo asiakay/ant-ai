@@ -18,7 +18,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             build in public with us &nbsp;
-            <code className={styles.code}>@ github.com/asiakay/ant.ai</code>
+            <code className={styles.code}>@ <a href=github.com/asiakay/ant.ai</a></code>
           </p>
           <div>
             <a
