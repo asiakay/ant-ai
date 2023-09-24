@@ -1,7 +1,8 @@
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
             // Parse the incoming JSON data
-const data = JSON.parse(req.body);
+            try {
+                const data = JSON.parse(req.body);
 
     // Here, you would typically handle user creation, database interaction, and validation
     // Example: Create a user in your database
@@ -23,6 +24,10 @@ const data = JSON.parse(req.body);
         // Return a success response
 
     res.status(200).json(newUser);
+} catch (error) {
+    console.error('Registration error:', error);
+    res.status(500).json({ error: 'Unable to register user' });
+}
 } else {
     // Handle any other HTTP method
     res.status(405).end(); // Method Not Allowed
