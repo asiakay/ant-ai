@@ -51,8 +51,9 @@ function RegistrationForm() {
       });
 
       if (response.ok) {
+        const data = await response.json();
         // Registration successful, redirect to the profile page
-        window.location.href = '/profile'; // You can use Next.js routing here
+        window.location.href = '/profile/${data.username}'; // You can use Next.js routing here
       } else {
         // Handle registration error
         console.error('Registration failed');
